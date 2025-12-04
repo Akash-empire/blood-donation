@@ -1,0 +1,281 @@
+/* Global Colors */
+:root {
+    --red: #c91515;
+    --light-bg: #f7f7f7;
+}
+ .logo-img {
+    width: 120px;
+ }
+/* Navbar */
+
+.navbar-nav {
+    gap: 50px;
+}
+.main-nav {
+    background: var(--red);
+    padding: 0 0;
+}
+.nav-link {
+    color: white;
+    font-weight: 600;
+}
+.nav-link.active {
+    color: #ffe680 !important;
+}
+.search-box {
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+/* Hero Section */
+/* 1. Banner Class (Visuals) */
+.banner {
+    /* Set the dimensions */
+    width: 100%;
+    height: 250px; /* Fixed height for the banner */
+    
+    /* Set the background image */
+    background-image: url('./images/donation.jpg'); /* **Update to your image file name** */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Custom CSS for the Services Section */
+
+/* 1. Styling for the Service Card Box */
+.service-card {
+    /* White background */
+    background-color: white;
+    
+    /* Rounded corners */
+    border-radius: 15px; 
+    
+    /* Subtle drop shadow to lift the card, similar to the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    
+    /* Ensure height consistency across all cards */
+    height: 100%;
+    
+    /* Centers the card content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Transition for a smooth hover effect (optional) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Optional: Add a subtle lift on hover */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 2. Icon Placeholder (adjust if you use images instead of Font Awesome) */
+.icon-placeholder {
+    /* Define a minimum size for the icon area */
+    width: 80px; 
+    height: 80px;
+    
+    /* Ensure the icon is centered vertically/horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. Styling for the bottom text block */
+.services-section .lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* 3. Text Block (Minor Adjustments) */
+.text-block {
+    /* Optional: Limit the width of the text block for better readability */
+    max-width: 450px; 
+    text-align: right;
+}
+
+/* Adjust the main heading size for clarity */
+.text-block h2 {
+    font-size: 2.5em; 
+}
+
+.custom-red-bg {
+    background-color: #c91515; /* A deep, striking red similar to the image */
+}
+
+/* 2. Style the custom yellow/gold link color */
+.custom-link {
+    color: #f7c006; /* A warm yellow/gold color */
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* Hover effect for the links */
+.custom-link:hover {
+    color: #ffd700; /* Slightly brighter on hover */
+    text-decoration: underline !important;
+}
+
+/* 3. Image Container Styling */
+.image-container {
+    height: 100%; 
+}
+
+/* Ensure the image covers the container height */
+.image-container img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adjustments for typography to match the image closely */
+.custom-red-bg p {
+    font-size: 1.15em;
+    line-height: 1.5;
+}
+
+.custom-red-bg h2 {
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+/* Custom CSS for the Organ Donation Section */
+
+/* 1. Styling for the Card Box */
+.card-box {
+    /* Thin, light gray border */
+    border: 3px solid #ddd; 
+    border-radius: 5px;
+    height: 100%; /* Ensures all cards are the same height */
+    transition: box-shadow 0.3s ease;
+}
+
+/* Subtle hover effect (optional but nice) */
+.card-box:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* 2. Styling for the Icon Circle */
+.icon-circle {
+    /* Define dimensions for the circle */
+    width: 120px;
+    height: 120px;
+    
+    /* Create the white circle with a shadow/border */
+    background-color: white;
+    border-radius: 50%;
+    
+    /* Match the thin gray border from the card */
+    border: 3px solid #ddd; 
+    
+    /* Center the icon inside the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Position the circle slightly above the card top border */
+    position: relative;
+    top: -60px; /* Pulls the circle up by half its height */
+    margin-bottom: -60px !important; /* Counteracts the space loss from 'top' move */
+    
+    /* Add a subtle shadow for depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 3. Text Descriptions */
+.card-description {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Ensure the section has a clean white background */
+.organ-donation-section {
+    background-color: white;
+}
+
+/* Services */
+.service-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Info Section */
+.info-section {
+    background: var(--light-bg);
+}
+.info-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.learn-btn {
+    color: var(--red);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Organ Section */
+.organ-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Custom CSS for the Footer Section */
+
+/* 1. Define the custom dark red color for the footer */
+.custom-footer {
+    background-color: #c91515; /* Using the same deep red as the 'What's In Your Blood?' section */
+    font-size: 0.95rem; /* Slightly smaller font size for links/info */
+}
+
+/* 2. Styling for the quick links lists */
+.footer-links a,
+.footer-contact span,
+.footer-contact i {
+    color: white; /* Ensure text and icons are white */
+    text-decoration: none;
+    line-height: 2.2; /* Spacing between list items */
+}
+
+/* Link hover effect */
+.footer-links a:hover {
+    color: #ffd700; /* Subtle yellow/gold on hover */
+    text-decoration: underline;
+}
+
+/* Adjustments for the contact info icons */
+.footer-contact i {
+    font-size: 1.1em;
+    width: 20px; /* Gives space for consistent alignment */
+    text-align: center;
+}
+
+/* 3. Separator line styling */
+.footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.4); /* Thicker white line */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 4. Social Media Icon styling */
+.social-icon {
+    color: white;
+    font-size: 1.3em;
+    margin-left: 15px; /* Spacing between icons */
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffd700; /* Subtle yellow/gold on hover */
+}
